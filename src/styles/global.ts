@@ -1,19 +1,19 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
     --background: #f0f2f5;
-    --red: #e52e4d;
-    --green: #33cc95;
-    --blue: #5429cc;
+    --red: #E52E4D;
+    --green: #33CC95;
+    --blue: #5429CC;
 
-    --blue-light: #6933ff;
+    --blue-light: #6933FF;
 
-    --text-title: #363f5f;
-    --text-body: #969cb3;
+    --text-title: #363F5F;
+    --text-body: #969CB3;
 
-    --background: #f0f2f5;
-    --shape: #ffffff;
+    --background: #F0F2F5;
+    --shape: #FFFFFF;
   }
 
   * {
@@ -21,10 +21,10 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-
+  
   html {
     @media (max-width: 1080px) {
-      font-size: 93.75%;
+      font-size: 93.75%; 
     }
 
     @media (max-width: 720px) {
@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, textarea, button {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
   }
 
@@ -72,11 +72,10 @@ export const GlobalStyle = createGlobalStyle`
   .react-modal-content {
     width: 100%;
     max-width: 576px;
-
     background: var(--background);
     padding: 3rem;
     position: relative;
-    border-radius: 0.25rem;
+    border-radius: 0.24rem;
   }
 
   .react-modal-close {
@@ -92,5 +91,4 @@ export const GlobalStyle = createGlobalStyle`
       filter: brightness(0.8);
     }
   }
-`;
-
+`

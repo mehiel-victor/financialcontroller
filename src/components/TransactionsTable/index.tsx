@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import { Container } from "./styles";
 import { api } from "../../services/api";
+import { Container } from "./styles";
 
 export function TransactionsTable() {
   useEffect(() => {
     api.get('transactions')
-    .then(response => console.log(response.data));
+      .then(response => console.log(response.data))
   }, []);
 
   return (
@@ -22,19 +22,19 @@ export function TransactionsTable() {
 
         <tbody>
           <tr>
-            <td>Fone de ouvido</td>
-            <td className="deposit">R$200.00</td>
-            <td>Venda</td>
+            <td>Desenvolvimento de website</td>
+            <td className="deposit">R$12.000</td>
+            <td>Desenvolvimento</td>
             <td>20/02/2021</td>
           </tr>
           <tr>
-            <td>Fita led</td>
-            <td className="withdraw">- R$90.00</td>
-            <td>Compra</td>
-            <td>21/02/2021</td>
+            <td>Aluguel</td>
+            <td className="withdraw">- R$1.100</td>
+            <td>Casa</td>
+            <td>17/02/2021</td>
           </tr>
         </tbody>
       </table>
     </Container>
-  )
-} 
+  );
+}

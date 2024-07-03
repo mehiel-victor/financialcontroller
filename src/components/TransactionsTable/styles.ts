@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
+  margin-top: 4rem;
 
   table {
-    width: 42%;
+    width: 100%;
     border-spacing: 0 0.5rem;
 
     th {
@@ -24,7 +23,7 @@ export const Container = styled.div`
       border-radius: 0.25rem;
 
       &:first-child {
-        color: var(--text-color);
+        color: var(--text-title);
       }
 
       &.deposit {
@@ -36,4 +35,4 @@ export const Container = styled.div`
       }
     }
   }
-`
+`;
